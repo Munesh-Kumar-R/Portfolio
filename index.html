@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="login.css">
+    
+    <script src="https://kit.fontawesome.com/ac31ecc5e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        
+        
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <a href="#portfolio" class="btn1">
+                    <p1>Web Developer</p1>
+                    <h1> <span1>
+                        Hello, I'm <br> Munesh</span1>
+                        <span2>
+                            Kumar </span2>
+                        <span3>R from INDIA</span3>
+                    </h1>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------- ABOUT-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <video src="intro.mp4" controls ></video> 
+                </div>
+
+                <div class="about-col-2">
+                    <br>
+                    <br>
+                    <h1 class="sub-titles">About Me</h1>
+                    <p>
+                        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate adipisci aliquam,
+                        assumenda
+                        dolores tempora nobis laborum neque, vel odit deserunt voluptatum, rem ullam pariatur impedit
+                        explicabo obcaecati eaque! Possimus, architecto.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('project')">Projects</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience/Internship</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!---------skills------ -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Programming Languages -<span> C++ , C , java , python , HTML , CSS , Javascript
+                                  
+                               <br> </span>Frameworks : <span>React , Node JS
+                                    , Mangodb , SQL </span><br></li>
+                            <li><span>Web Development</span><br>Website and WebApp Develeopment</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <!-- ----Project--------->
+                    <div class="tab-contents" id="project">
+                        <ul>
+                            <li><span>portfolio website</span><br>All the information needed about me in which your in</li>
+                            <li><span><a href="netflix.html" target="main()">Netflix Clone</a></span><br>using HTML, CSS</li>
+                            <li><span><a href="typingspeed.html" target="main()">Typing Speed Test Website</a></span> <br>Test The Number of Words U can Type In Minutes Can be Estimated
+                            <li><span><a href="quiz.html" target="main()">Quiz Website</a></span> <br>Simple Quiz Web Application
+                           
+                           
+                            </li>
+                        </ul>
+                    </div> 
+                    <!------Experiences/internships------->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development Intern-CodesOnBytes</span><br>
+                            Built Four Responsive Websites  <a href="https://github.com/Munesh-Kumar-R/COB-Web-development" target="main()">Click here to view Projects</a></li>
+                            <!-- <li><span>Still no internship</span><br></li>
+                            <li><span>Still no internship</span><br></li> -->
+                        </ul>
+                    </div>
+                    <!------Education------->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023-Current</span><br>BE-Computer Science and Engineering(4th Sem)
+                                <br>CGPA-9.4/10
+                            </li>
+                            <li><span>2019-2021</span> <br> PCMB-Percentage-99.5%<br></li>
+                            <li><span>2019</span><br>10th-Percentage-95.8%</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- -------portfolio---- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titles">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Netflixlogo.png">
+                    <div class="layer">
+                        <h3 class="design">Netflix Clone</h3>
+                        <p><!--The App connects you to the talented people around the world.Download it from the playstore-->
+                           Responsive Netflix Clone Website
+                        </p> 
+                        <a href="netflix.html" target="main()"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="quiz logo.jpg" >
+                    <div class="layer">
+                        <h3 class="design">Quiz App</h3>
+                        <p>Let's Play Quiz
+                        </p>
+                        <a href="quiz.html" target="main()"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="typing.jpg">
+                    <div class="layer">
+                        <h3 class="design">Typing Speed Test Website</h3>
+                        <p>Let's Check the Typing spped Test
+                        </p>
+                        <a href="typingspeed.html" target="main()"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-- ------Services------ -->
+
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                <div1>
+
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        <p1>Web Design</p1>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusantium cumque autem
+                        sed quod alias quo obcaecati tempora? Minima, explicabo quisquam expedita quidem modi itaque
+                        iure ad deserunt obcaecati. Impedit!</p>
+                    <!-- <a href="#">Learn more</a> -->
+
+                </div1>
+                <div2>
+
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>
+                        <p2>App Design</p2>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusantium cumque autem
+                        sed quod alias quo obcaecati tempora? Minima, explicabo quisquam expedita quidem modi itaque
+                        iure ad deserunt obcaecati. Impedit!</p>
+                    <!-- <a href="#">Learn more</a> -->
+
+                </div2>
+                <div3>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>
+                        <p3> Notes and Result Website</p3>
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusantium cumque autem
+                        sed quod alias quo obcaecati tempora? Minima, explicabo quisquam expedita quidem modi itaque
+                        iure ad deserunt obcaecati. Impedit!</p>
+                    <!-- <a href="#">Learn more</a> -->
+
+                </div3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> muneshkumar15123@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+91-7975726586</p>
+                    <div class="social-icons">
+                        <!-- icons -->
+                        <!-- profile links -->
+                        <a href="https://web.telegram.org/a/" target="main()"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/its._.muneshkumar_r/" target="main()"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/muneshkumarr/" target="main()"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/MuneshKr15123" target="main()"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Munesh_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder=" Provide Your Name" required>
+                        <input type="text" name="Email" placeholder="Provide Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Type the message you want to send me (or) any Feedback for Me"></textarea>
+                        <button type="submit" class="btn btn2">Submit Now</button>
+                        <button type="reset" class="btn btn2">Reset Now</button>
+                    </form>
+                    <span id="msg">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="copyright">
+        <p>
+            Copyright© Munesh. Made with <i class="fas fa-heart"></i> By Munesh Kumar R
+        </p>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!-- open and close menu -->
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    
+    function openmenu(){
+       sidemenu.style.right="0";
+    }
+    function closemenu(){
+       sidemenu.style.right="-65%";
+    }
+    </script>
+    
+ <!-- google sheets -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxiPlYjS6QsPGmGxWje3GKSymwNdEBD51jo3hljTvgsHDh9ZpsfOv7iDM5mziZ992U-sw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message has been sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=" "
+
+            },2000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+</body>
+
+</html>
